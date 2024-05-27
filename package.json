@@ -1,0 +1,38 @@
+{
+	"name": "njw-blocks",
+	"version": "0.1.0",
+	"description": "This is NJW blocks which has sample block creation tutorial and including wp-cover-block",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"create:block": "cd ./src/blocks && npx @wordpress/create-block --no-plugin --template ../../njw-block-starter --variant dynamic",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.17.0",
+		"@testing-library/user-event": "^14.4.3",
+		"@types/jest": "^29.5.3",
+		"@types/node": "^20.4.5",
+		"@types/react": "^18.2.17",
+		"@types/react-dom": "^18.2.7",
+		"@types/wordpress__block-editor": "^11.5.1",
+		"@types/wordpress__blocks": "^12.5.0",
+		"@types/wordpress__components": "^23.0.1",
+		"@wordpress/block-editor": "^12.6.0",
+		"@wordpress/blocks": "^12.15.0",
+		"@wordpress/components": "^25.4.0",
+		"@wordpress/create-block": "^4.22.0",
+		"@wordpress/scripts": "^26.9.0",
+		"@wordpress/server-side-render": "^4.15.0"
+	},
+	"dependencies": {
+		"@wordpress/create-block-tutorial-template": "^2.26.0"
+	}
+}

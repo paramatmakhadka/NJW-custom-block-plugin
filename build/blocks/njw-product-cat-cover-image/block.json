@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "njw/product-cat-cover-image",
+  "version": "0.1.0",
+  "title": "NJW - Product Category Banner",
+  "category": "widgets",
+  "icon": "cover-image",
+  "description": "This is used to show product custom category banner along with product category title and description.",
+  "textdomain": "aremedia-bv",
+  "attributes": {
+    "mode": {
+      "enum": [
+        "preview",
+        "edit"
+      ]
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "title": "Product Category Title",
+      "description": "Product Category Description",
+      "images": {
+        "type": "object"
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
